@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shortened URL</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9fafb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 500px;
+        }
+        h1 {
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+        .url-box {
+            background-color: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            word-wrap: break-word;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #4f46e5;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Shortened URL 🎉</h1>
+        <div class="url-box">
+            <a th:href="${shortUrl}" th:text="${shortUrl}" target="_blank"></a>
+        </div>
+        <a href="/" class="back-btn">Shorten Another</a>
+    </div>
+</body>
+</html>

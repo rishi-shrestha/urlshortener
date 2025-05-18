@@ -62,7 +62,6 @@ git clone https://github.com/your-username/ShortnerKing.git
 cd ShortnerKing
 2. Build and Run
 bash
-Copy code
 # Build the project
 ./mvnw clean install
 
@@ -72,7 +71,6 @@ Copy code
 Open your browser and navigate to:
 
 arduino
-Copy code
 http://localhost:8080
 📚 Learning Outcomes
 Understanding of Spring Boot MVC architecture
